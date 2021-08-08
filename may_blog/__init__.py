@@ -16,6 +16,4 @@ app.register_blueprint(auth)
 root_db.init_app(app)
 migrate = Migrate(app, root_db)
 
-login_manager.init_app(pp)
-
-from may_blog import models
+login_manager.init_app(app)
